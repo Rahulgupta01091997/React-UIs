@@ -1,9 +1,12 @@
 import { Avatar } from "@material-ui/core";
 import React from "react";
+import { useSelector } from "react-redux";
 import "./Sidebar.css";
 import splashimg from "./splashimg.jpg";
+import { selectUser } from "./features/userSlice";
 
 function Sidebar() {
+  const user = useSelector(selectUser);
   const recentItem = (topic) => {
     return (
       <div className="sidebar__recentItems">
@@ -19,10 +22,13 @@ function Sidebar() {
         <img src={splashimg} alt="" />
         <Avatar
           className="sidebar__avatar"
-          src="https://media-exp1.licdn.com/dms/image/C4E03AQELUIEu7jFNEw/profile-displayphoto-shrink_100_100/0/1603224176601?e=1645056000&v=beta&t=zsvFPufd4i0fvaM2OXUdclytncYaoOeFLgwHzhvrP7g"
-        />
+          src={user.photoURL}
+          style={{ color: "black" }}
+        >
+          {user.email[0].toUpperCase()}
+        </Avatar>
         <div className="sidebar__details">
-          <h2>Rahul Gupta</h2>
+          <h2>{user.displayName}</h2>
           <h4>Software Engineer at Larsen & Toubro Infotech</h4>
         </div>
       </div>

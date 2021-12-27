@@ -29,6 +29,7 @@
   background-color: #0a66c2;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .login__register {
   color: #0a66c2;

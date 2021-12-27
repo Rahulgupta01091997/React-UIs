@@ -1,7 +1,7 @@
 .sidebar {
   top: 80px;
   position: sticky;
-  flex-grow: 0.2;
+  flex-grow: 0.1;
   border-radius: 10px;
   height: fit-content;
   text-align: center;
@@ -32,9 +32,9 @@
   border-top-right-radius: 10px;
   object-fit: cover;
 }
-.sidebar__details {
+/* .sidebar__details {
   padding: 0 10px 10px;
-}
+} */
 .sidebar__details > h4 {
   color: gray;
   font-size: 15px;

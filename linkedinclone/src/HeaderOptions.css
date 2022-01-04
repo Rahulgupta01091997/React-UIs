@@ -18,3 +18,70 @@
   height: 25px !important;
   width: 25px !important;
 }
+.headerOption__dropdown {
+  border: solid lightgray 1px;
+  position: absolute;
+  top: 115%;
+  right: 20%;
+  list-style: none;
+  background-color: white;
+  /* z-index: 10; */
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
+}
+.dropdown__item {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  border-bottom: solid 1px lightgray;
+}
+.dropdown__item1Data {
+  display: flex;
+}
+.dropdown__avatar {
+  height: 62px !important;
+  width: 62px !important;
+  object-fit: contain;
+  margin-right: 5px;
+}
+.item1__details > h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.item1__details > h4 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.dropdown__item1Button {
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  background-color: transparent;
+  border: solid 1px #0a66c2;
+  margin-top: 8px;
+  border-radius: 50px;
+  color: #0a66c2;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+.subMenuItem__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.subMenuItem__subTitle {
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 9px;
+}
+.dropdown__signOut {
+  font-size: 16px;
+  font-weight: 100;
+  padding: 10px;
+  cursor: pointer;
+}
